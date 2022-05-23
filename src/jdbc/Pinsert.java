@@ -16,7 +16,7 @@ public class Pinsert{
             stmt.setInt(1,11);
             stmt.setString(2,"alu");
             stmt.setInt(3,3000);
-            int i = stmt.executeUpdate();
+            stmt.executeUpdate();
             System.out.print("Done");
             con.close();
         }catch(Exception e){

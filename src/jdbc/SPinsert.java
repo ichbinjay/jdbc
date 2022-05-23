@@ -20,7 +20,7 @@ public class SPinsert{
                 stmt.setString(2,sc.next());
                 System.out.println("Enter Branch");
                 stmt.setString(3,sc.next());
-                int i = stmt.executeUpdate();
+                stmt.executeUpdate();
             }
             sc.close();
             con.close();
