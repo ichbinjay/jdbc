@@ -22,6 +22,7 @@ public class SPinsert{
                 stmt.setString(3,sc.next());
                 int i = stmt.executeUpdate();
             }
+            sc.close();
             con.close();
         }catch(Exception e){
             System.out.print(e);
