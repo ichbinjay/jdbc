@@ -1,6 +1,6 @@
 # opening a file in read mode
 f = open("D:/pyinp.txt", "r")
-print("file contains following text\n", f.read(), "\n")
+print("file contains following text:\n", f.read(), "\n", sep="")
 f.close()
 
 f = open("D:/pyinp.txt", "r")
@@ -15,7 +15,7 @@ f = open("D:/pyinp.txt", "r")
 # print words in the file in alphabetical order
 words = []
 for line in f:
-    words += [x for x in line.split(' ') if x != '\n']
+    words += [x for x in line.split(' ')]
     if '\n' in words[-1]:
         words[-1] = words[-1][:-1]
 print("sorted: ", sorted(words))
